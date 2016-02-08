@@ -115,6 +115,9 @@
 .title-text h4{
   text-align:center;
 }
+.lefty{
+  text-align:left;
+}
 .title-text p{
   margin-top:10px;
   font-size: 12px;
@@ -229,6 +232,9 @@
 body.overflow-hidden {
   /* when primary navigation is visible, the content in the background won't scroll */
   overflow: hidden;
+}
+#magicContainer{
+  padding-bottom: 25px;
 }
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
@@ -624,7 +630,7 @@ a.curent-nav-color{
 ================================================== */
 
 .cd-btn {
-  background-color: #fe91a8;
+  background-color: #71b68a;
   border: 1px solid #ccc;
   display: inline-block;
   padding: 12px 35px;
@@ -2057,6 +2063,9 @@ figure.vimeo a img, figure.youtube a img {
   color:#fafafa;
 }
 
+#processBox{
+  text-align:center;
+}
 .about-intro-text:before{
   position:absolute;
   content:'';
@@ -2159,6 +2168,7 @@ figure.vimeo a img, figure.youtube a img {
 .team-box-1 ul li{
   display:inline-block;
   text-align:center;
+  color: #fff;
 }
 .team-box-1:hover ul{
   top:50%;
@@ -2207,6 +2217,8 @@ figure.vimeo a img, figure.youtube a img {
   position:relative;
   width:100%;
   overflow:hidden;
+  text-align: center;
+  padding: 15px;
 }
 .services-box-2 .icon{
   position:relative;
@@ -2975,6 +2987,10 @@ figure.vimeo a img, figure.youtube a img {
 }
 
 @media only screen and (max-width: 800px) {
+.cd-intro-block::after {
+  display:none;
+}
+
 #google-container {
     height:340px;
 }
@@ -2994,6 +3010,14 @@ figure.vimeo a img, figure.youtube a img {
 }
 
 @media only screen and (max-width: 600px) {
+.cd-intro-block::after {
+  display:none;
+}
+
+.logo-wrap img{
+  display:none;
+}
+
 .cd-intro-block h1 {
   letter-spacing:5px;
   font-size:40px;

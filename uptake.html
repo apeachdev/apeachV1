@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>UpTake - Coming Soon</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+	
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<link rel="stylesheet" href="css/animsition.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/ionicons.css" />
+	<link rel="stylesheet" href="css/simple-line-icons.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/owl.transitions.css"/>
+	<link rel="stylesheet" href="css/retina.css"/>
+	
+
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	
+	<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+	
+	
+</head>
+<body>	
+	<!-- page load -->
+	<div class="animsition">
+	
+
+		<header class="cd-header">
+		
+			<div class="container">		
+				<div class="twelve columns">	
+					<div class="logo-wrap">
+						<a href="http://www.apea.ch">
+						  <img src="images/logo.png" alt="">
+						</a>
+			</div>		
+				
+		</header>	
+
+	
+		<div class="cd-intro-block">
+			<div class="content-wrapper">
+				<img width="500px" src="images/uptakeLogo.png" alt="">
+				<br />
+				<p>Coming Soon.</p>
+			</div>
+		</div> <!-- .cd-intro-block -->
+
+		<div class="cd-projects-wrapper">
+			<ul class="cd-slider">
+				<li class="current">
+					<a href="#project-1">
+						<img src="images/portfolio/1.jpg" alt="project image">
+						<div class="project-info">
+							<h6>Emerging Circle</h6>
+							<p>Web | Design</p>
+						</div>
+					</a>
+				</li>
+				<li>
+
+				</li>
+			</ul>
+
+			<ul class="cd-slider-navigation cd-img-replace">
+				<li><a href="#0" class="prev inactive">Prev</a></li>
+				<li><a href="#0" class="next">Next</a></li>
+			</ul> <!-- .cd-slider-navigation -->
+		</div> <!-- .cd-projects-wrapper -->
+
+		
+		
+	</div>	
+		
+	<!-- JAVASCRIPT
+    ================================================== -->
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>	
+<script type="text/javascript" src="js/jquery.animsition.min.js"></script>
+<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>  
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/jquery.fs.tipper.min.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.js"></script>	
+<script type="text/javascript" src="js/classie.js"></script>  
+<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script> 
+<script type="text/javascript" src="js/main-portfolio.js"></script>
+<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script> 
+<script type="text/javascript" src="js/mas-project.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+		var $container = $('.gallery-image-wrap');
+		// initialize Masonry after all images have loaded  
+		$container.imagesLoaded( function() {
+		  $container.masonry({
+				itemSelector: '.item-one-half'
+			});
+		});
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script> 
+<script type="text/javascript"> 
+(function($) { "use strict"; 
+
+	$(".item-one-half").fitVids();	
+	
+	$('.vimeo a,.youtube a').click(function (e) {
+		e.preventDefault();
+		var videoLink = $(this).attr('href');
+		var classeV = $(this).parent();
+		var PlaceV = $(this).parent();
+		if ($(this).parent().hasClass('youtube')) {
+			$(this).parent().wrapAll('<div class="video-wrapper">');
+			$(PlaceV).html('<iframe frameborder="0" height="333" src="' + videoLink + '?autoplay=1&showinfo=0" title="YouTube video player" width="547"></iframe>');
+		} else {
+			$(this).parent().wrapAll('<div class="video-wrapper">');
+			$(PlaceV).html('<iframe src="' + videoLink + '?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;color=ff7807" width="500" height="281" frameborder="0"></iframe>');
+		}
+	});	
+	
+})(jQuery);
+</script> 
+<script type="text/javascript" src="js/custom-portfolio.js"></script>    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73377629-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End Document
+================================================== -->
+</body>
+</html>
